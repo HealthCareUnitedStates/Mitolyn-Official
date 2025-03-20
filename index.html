@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitolyn - Official Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 100%;
+            margin: auto;
+            padding: 20px;
+            max-width: 1000px;
+        }
+        .article {
+            margin-left: 200px;
+            margin-right: 200px;
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            /* width: 100%; */
+        }
+        h1, h2 {
+            text-align: center;
+            color: #2c3e50;
+            font-weight: 800;
+            font-size: 30px;
+            
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .faq-item p {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out, padding 1s ease-in-out;
+        padding: 0 10px;
+        }
+
+        .faq-item.active p {
+        max-height: 100px; /* Adjust as needed */
+        padding: 10px;
+        margin-left: 200px;
+        margin-right: 200px;
+        }
+
+        .faq-item button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 200px;
+        width: 74%;
+        background: none;
+        border: none;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: left;
+        padding: 18px;
+        cursor: pointer;
+        background-color: #ededef;
+        border-radius: 15px;
+        }
+
+        .faq-item img {
+        transition: transform 1s ease-in-out;
+        }
+
+        .faq-item.active img {
+        transform: rotate(180deg);
+        }
+        nav {
+            background: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        #faq{
+        
+            background-image: url(/Untitled\ design\ \(1\).jpg);
+        }
+        #one {
+            background-image: url(/Unlock\ Your\ Metabolic\ Power\ \(2\).jpg);
+            height: 600px;
+            background-size: cover;
+            top: 50px;
+
+        }
+        #mit{
+            background-size: cover;
+        }
+
+        /* Mitolyn Price */
+        .pricing-container {
+            display: flex;
+            gap: 30px;
+        }
+        #basic{
+            margin-left: 305px;
+        }
+        #bundle{
+            height: 590px;
+        }
+        .pricing-box {
+            width: 280px;
+            height: 550px;
+            background: white;
+            /* padding: 20px; */
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+        }
+        .pricing-box h3 {
+            background-color: #1f918e;
+            color: #fff;
+            padding:8px;
+            border-radius: 0px;
+            margin-top: 0px;
+
+        }
+               
+        .most-popular {
+            height: 610px;
+            border: 3px solid #1f918e;
+        }
+        .buy-button {
+            display: inline-block;
+            background: #f8b400;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 15px;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        .buy-button:hover {
+            background: #ff8800;
+        }
+
+        #click:hover {
+        color: orange;
+    }
+
+    </style>
+    <script>
+        function toggleFAQ(button) {
+        let faqItem = button.parentElement;
+        let isActive = faqItem.classList.contains("active");
+
+        // Close all FAQ items
+        document.querySelectorAll(".faq-item").forEach(item => {
+            item.classList.remove("active");
+        });
+
+        // Open the clicked item if it was closed
+        if (!isActive) {
+            faqItem.classList.add("active");
+        }
+        }
+        // Mitolyn Price 
+        document.getElementById('basic').addEventListener('mouseenter', function() {
+            this.classList.add('zoom');
+        });
+        document.getElementById('basic').addEventListener('mouseleave', function() {
+            this.classList.remove('zoom');
+        });
+
+       
+    </script>
+</head>
+<body>
+    <!-- <header>
+        
+      <div>  <img  style="height: 50px;" src="8f5f800e-8245-41bf-9293-c246eba0bef5_enhanced.png" alt="Mitolyn" /><h1 style="color: white; font-size:50px;">Mitolyn | Official Webstie | USA</h1></div>
+    </header> -->
+    <nav style="display: flex; align-items: center; justify-content: space-between; background: #222; padding: 0px 5%; position: fixed; width: 100%; top: 0; left: 0; right: 0; z-index: 1000; box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);">
+        <!-- Logo -->
+        <img src="mitolyn-banner-removebg-preview.png" alt="Mitolyn" style="height: 80px;margin-left: 120px;">
+    
+        <!-- Navigation Links -->
+        <div style="display: flex; gap: 20px;">
+            <a href="#" style="color: rgb(255, 255, 255); text-decoration: none; font-size: 18px;"><strong>Free</strong> Bonuses</a>
+            <a href="#about" style="color: rgb(255, 255, 255); text-decoration: none; font-size: 18px;">About</a>
+            <a href="#Ingredients" style="color: rgb(255, 255, 255); text-decoration: none; font-size: 18px;">Ingredients</a>
+            <a href="#basic" style="color: rgb(255, 255, 255); text-decoration: none; font-size: 18px;">Price</a>
+            <!-- <a href="#" style="color: white; text-decoration: none; font-size: 18px;">Pros & Cons</a> -->
+            <a href="#faq" style="color: rgb(255, 255, 255); text-decoration: none; font-size: 18px;">FAQ's</a>
+        </div>
+    
+        <!-- Order Now Button -->
+        <a href="https://orders.clickbank.net/?affi=mitox&cbfid=57989&cbitems=mitolyn-06&corid=1a19e896-8844-43eb-95b6-147b3a53987d&exitoffer=exitoffer2&oaref=01.87E7EFFA0628E7D1CC368DD52B0890C0689140338C202F83F66F2BC90F1CEE415348C823AFF8C0FAFDC1B6AA3B205BA683558C926E4128D48A7E91C66CC80B4EC63A7E7CB399AACABD062C34457934F0E0A94ED9&template=6-bottles&time=1741881791&vtid=welcome&vvvv=mitolyn&vvar=cbfid%3D57989%26cbitems%3Dmitolyn-06%26exitoffer%3Dexitoffer2%26template%3D6-bottles%26vtid%3Dwelcome" style="display: flex; align-items: center; margin-right: 270px;">
+            <img  src="order.png" alt="Order Now" style="height: 50px;" class="order-btn">
+        </a>
+    </nav>
+    
+    <div id="one" style="padding-left: 10%; padding-top: 200px;"><img  style="height: 400px; margin-top: 100px;" src=""  alt="" /></div>
+    <!-- <br> -->
+    <!-- <div class="container"> -->
+        <div style="width: 97%; margin-left: 0px; background-color: #f9f9f9; font-style: italic;" class="article">
+            <!-- <h2>Mitolyn</h2> -->
+            <p >"Welcome to the world of Mitolyn, a revolutionary dietary supplement designed to enhance your overall health and well-being. In today's fast-paced world, maintaining optimal health can be challenging, but with Mitolyn, you can give your body the essential nutrients it needs to function at its best.
+
+                This article will provide an in-depth look at Mitolyn—its ingredients, benefits, how it works, and who can use it. We'll also discuss its pros and cons, helping you make an informed decision about incorporating it into your daily routine. Whether you're looking to boost energy, improve immunity, or enhance overall vitality, Mitolyn promises to be a powerful addition to your wellness journey.
+                
+                Let's dive deeper into what makes Mitolyn special and why it might be the perfect supplement for you."</p>
+        </div>
+
+        <div style="font-size: 30px; font-weight: bold; background: linear-gradient(45deg, #ff416c, #ff4b2b); color: #fff; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);">
+            🔥 🎉 Hurry Up! Limited-Time Offer!  
+            👉 <a id="click" href="#" style="color: #f9f9f9; font-size: 42px; font-weight: bold; transition: color 0.3s;">Click Here</a>  
+            for an **Exclusive Discount!** 🎁💥
+        </div>
+
+        <br>
+        <!--Mitolyn Price -->
+        <div class="pricing-container">
+            <div class="pricing-box" id="basic">
+                <h3>BASIC</h3>
+                <p><h2 style="margin-bottom: 10px; font-weight: 800;  font-size: 35px; height: 25px;">1 BOTTLE</h2></p>
+                <p style="font-size: 25px;"><strong>30 Day Supply</strong></p>
+                <img style="width: 160px; padding-top: -20px;" src="MITOLYN-4-550-removebg-preview_enhanced.png">
+                <h2 style="font-size : 60px; margin: 10px;">$59</h2>
+                <img style="width: 220px; height: 90px;" src="Buy.png">
+                <!-- <a href="#" class="buy-button" style="font-size : 30px;">BUY NOW</a> -->
+            </div>
+            <div class="pricing-box most-popular" id="most-popular" style="background-color: #ffffcc">
+                <h3>MOST POPULAR</h3>
+                <p><h2 style="margin-bottom: 10px; font-weight: 800;  font-size: 35px; height: 25px;">6 BOTTLES</h2></p>
+                <p style="font-size: 25px;"><strong>180 Day Supply</strong></p>
+                <img style="width: 250px; padding-top: -10px; margin: -35px;" src="6_bottle-removebg-preview.png">
+
+                <h2 style="font-size : 60px; margin: 10px; ">$234</h2>
+                <p>✅ 2 FREE BONUSES!<br>✅<strong style="color: rgb(202, 3, 3);"> FREE US SHIPPING!</strong></p>
+                <img style="width: 220px; height: 90px;" src="Buy.png">
+
+                <!-- <a href="#" class="buy-button" style="font-size : 30px;">BUY NOW</a> -->
+            </div>
+            <div class="pricing-box" id="bundle">
+                <h3>BUNDLE</h3>
+                <p><h2 style="margin-bottom: 10px; font-weight: 800;  font-size: 35px; height: 25px;">3 BOTTLES</h2></p>
+                <p style="font-size: 25px;"><strong>90 Day Supply</strong></p>
+                <img style="width: 180px; padding-top: -20px; margin: -10px;" src="3 bottle.jpg">
+
+                <h2 style="font-size : 60px; margin: 10px;">$147</h2>
+                <p>✅ 2 FREE BONUSES!</p>
+                <img style="width: 220px; height: 90px;" src="Buy.png">
+
+                <!-- <a href="#" class="buy-button" style="font-size : 30px;">BUY NOW</a> -->
+            </div>
+        </div>
+        <br>
+
+        <div id="about" style="font-size: 30px; padding: 10px; font-weight: bold; background-color: #ff416c; text-align: center;">
+             
+            <a href="#" style="color: #f9f9f9; font-size: 42px; text-decoration: none; font-weight: bold; transition: color 0.3s;">About</a>  
+           
+        </div>
+
+        <div  class="container">
+            <div class="text-content">
+                <p>🔹 <strong>Product Name:</strong> <span class="highlight">Mitolyn</span></p>
+                <p>🔹 <strong>Advantages:</strong> Enhances Libido, Boosts Testosterone & Supports Male Vitality</p>
+                <p>🔹 <strong>Rating:</strong> <span class="rating">★★★★★ </span>(5.0)</p>
+                <p>🔹 <strong>Side Effects:</strong> None Reported</p>
+                <p>🔹 <strong>Availability:</strong> <span class="highlight">Online</span></p>
+                <p>🔹 <strong>Where to Buy:</strong> <a class="buy-now" href="#">[BEST OFFER TODAY] Click to Purchase    </a></p>
+            </div>
+    
+            <div class="product-image">
+                <a href="https://mitolyn.com/" target="_blank">
+                    <img src="MITOLYN-4-550-removebg-preview_enhanced.png" alt="Mitolyn Bottle" class="mitolyn">
+                </a>
+            </div>
+            
+        </div>
+        <div class="article">
+            <h2>What is Mitolyn?</h2>
+            <p> <strong>Mitolyn</strong> is a premium dietary supplement formulated with a blend of natural ingredients, essential vitamins, and powerful antioxidants to support overall health and well-being. Designed to enhance energy levels, improve cognitive function, and promote physical endurance, Mitolyn is an ideal choice for individuals looking to optimize their daily performance.<br>
+
+                <br>This supplement works at a cellular level, helping to boost mitochondrial function, which is crucial for energy production in the body. By delivering key nutrients that support metabolism, immunity, and brain health, Mitolyn helps users feel more active, focused, and resilient throughout the day.<br>
+                <br>
+                <h3>Mitolyn is especially beneficial for:</h3><br>
+                ✔️ Professionals who need sustained energy and mental clarity.<br><br>
+                ✔️ Athletes and fitness enthusiasts looking for improved endurance and recovery.<br><br>
+                ✔️ Individuals facing fatigue due to a demanding lifestyle.<br><br>
+                ✔️ Anyone seeking overall wellness through a natural and effective supplement.<br><br>
+                
+                With no artificial additives or harmful chemicals, Mitolyn is a safe and effective way to nourish your body and maintain a healthy, active lifestyle.</p>
+        </div>
+        
+        <div class="article">
+            <h2>How Does Mitolyn Works?</h2>
+            <p><strong>Mitolyn</strong> works by delivering essential nutrients that support cellular energy production, enhance mitochondrial function, and promote overall well-being. It helps optimize ATP (adenosine triphosphate) synthesis, which is the primary energy source for cells, ensuring efficient energy metabolism.  <br><br>
+
+                Additionally, Mitolyn contains antioxidants that reduce oxidative stress by neutralizing free radicals, thereby protecting cells from damage and aging. By improving mitochondrial efficiency, it enhances stamina, cognitive function, and overall body performance. Its formulation supports cardiovascular health, muscle recovery, and immune function, making it beneficial for individuals looking to boost energy levels and maintain optimal health.</p>
+        </div>
+        <div class="article">
+            <h2>Who Can Use Mitolyn?</h2>
+            <p>Mitolyn is suitable for adults who want to improve their energy, immune system, and overall health. However, pregnant women and people with medical conditions should consult a doctor before using it.</p>
+        </div>
+
+        <div class="article">
+            <h2>Mitolyn Pros and Cons</h2>
+            <p><strong>Pros:</strong></p>
+            <ul>
+                <li>Boosts energy levels</li>
+                <li>Enhances mental clarity</li>
+                <li>Supports immune function</li>
+                <li>Made with natural ingredients</li>
+            </ul>
+            <p><strong>Cons:</strong></p>
+            <ul>
+                <li>Not suitable for children</li>
+                <li>Requires consistent use for best results</li>
+            </ul>
+        </div>
+
+        <!-- <div id="mit"><img style="height: 855px;" src="mit.jpg" alt="Mitolyn"></div> -->
+        
+
+        <div ><img  style="height: 595px;" id="policy" src="policy.png" alt="Mitolyn"></div>
+             
+        
+        <div class="faq" id="faq"><br>
+            <h2 style="text-align: center; font-weight: 600; font-size: 50px; color: #000002;">Frequently Asked Questions (FAQs)</h2>
+        
+            <div class="faq-item">
+                <button onclick="toggleFAQ(this)">
+                    Q: Is Mitolyn safe for me?
+                    <img src="drop.webp" alt="Dropdown Icon" style="width: 26px; height: 26px;">
+                </button>
+                <p>A: Do you have deep stubborn fat stores that no diet or exercise seems to remove? Then the answer is yes Mitolyn is right for you. Mitolyn has changed the lives of thousands of women and men from 18 to 80 and is designed to rapidly liquify fat in even the worst cases.</p>
+            </div>
+        
+            <div class="faq-item">
+                <button onclick="toggleFAQ(this)">
+                    Q: How many bottles should I order?
+                    <img src="drop.webp" alt="Dropdown Icon" style="width: 26px; height: 26px;">
+                </button>
+                <p>A: If you're over 35 years old...</p>
+            </div>
+        
+            <div class="faq-item">
+                <button onclick="toggleFAQ(this)">
+                    Q: What's the best way to take Mitolyn?
+                    <img src="drop.webp" alt="Dropdown Icon" style="width: 26px; height: 26px;">
+                </button>
+                <p>A: Take one capsule of Mitolyn with a big glass of cold water...</p>
+            </div>
+        
+            <div class="faq-item">
+                <button onclick="toggleFAQ(this)">
+                    Q: How long does it take to see results?
+                    <img src="drop.webp" alt="Dropdown Icon" style="width: 26px; height: 26px;">
+                </button>
+                <p>A: Results may vary, but most users notice improvements within a few weeks...</p>
+            </div>
+        
+            <div class="faq-item">
+                <button onclick="toggleFAQ(this)">
+                    Q: Can pregnant women use Mitolyn?
+                    <img src="drop.webp" alt="Dropdown Icon" style="width: 26px; height: 26px;">
+                </button>
+                <p>A: It is recommended that pregnant women consult a doctor before taking Mitolyn.</p>
+            </div>
+        
+            <div class="faq-item">
+                <button onclick="toggleFAQ(this)">
+                    Q: Where can I buy Mitolyn?
+                    <img src="drop.webp" alt="Dropdown Icon" style="width: 26px; height: 26px;">
+                </button>
+                <p>A: Mitolyn is available on its official website and other online stores.</p><br>
+            </div>
+        </div>
+        <div style="font-size: 30px; font-weight: bold; background: linear-gradient(45deg, #ff416c, #ff4b2b); color: #fff; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);">
+            🔥 🎉 Hurry Up! Limited-Time Offer!  
+            👉 <a id="click" href="#" style="color: #f9f9f9; font-size: 42px; font-weight: bold; transition: color 0.3s;">Click Here</a>  
+            for an **Exclusive Discount!** 🎁💥
+        </div>
+
+        <br>
+         <!--Mitolyn Price -->
+         <div class="pricing-container">
+            <div class="pricing-box" id="basic">
+                <h3>BASIC</h3>
+                <p><h2 style="margin-bottom: 10px; font-weight: 800;  font-size: 35px; height: 25px;">1 BOTTLE</h2></p>
+                <p style="font-size: 25px;"><strong>30 Day Supply</strong></p>
+                <img style="width: 160px; padding-top: -20px;" src="MITOLYN-4-550-removebg-preview_enhanced.png">
+                <h2 style="font-size : 60px; margin: 10px;">$59</h2>
+                <img style="width: 220px; height: 90px;" src="Buy.png">
+                <!-- <a href="#" class="buy-button" style="font-size : 30px;">BUY NOW</a> -->
+            </div>
+            <div class="pricing-box most-popular" id="most-popular" style="background-color: #ffffcc">
+                <h3>MOST POPULAR</h3>
+                <p><h2 style="margin-bottom: 10px; font-weight: 800;  font-size: 35px; height: 25px;">6 BOTTLES</h2></p>
+                <p style="font-size: 25px;"><strong>180 Day Supply</strong></p>
+                <img style="width: 250px; padding-top: -10px; margin: -35px;" src="6_bottle-removebg-preview.png">
+
+                <h2 style="font-size : 60px; margin: 10px; ">$234</h2>
+                <p>✅ 2 FREE BONUSES!<br>✅<strong style="color: rgb(202, 3, 3);"> FREE US SHIPPING!</strong></p>
+                <img style="width: 220px; height: 90px;" src="Buy.png">
+
+                <!-- <a href="#" class="buy-button" style="font-size : 30px;">BUY NOW</a> -->
+            </div>
+            <div class="pricing-box" id="bundle">
+                <h3>BUNDLE</h3>
+                <p><h2 style="margin-bottom: 10px; font-weight: 800;  font-size: 35px; height: 25px;">3 BOTTLES</h2></p>
+                <p style="font-size: 25px;"><strong>90 Day Supply</strong></p>
+                <img style="width: 180px; padding-top: -20px; margin: -10px;" src="3 bottle.jpg">
+
+                <h2 style="font-size : 60px; margin: 10px;">$147</h2>
+                <p>✅ 2 FREE BONUSES!</p>
+                <img style="width: 220px; height: 90px;" src="Buy.png">
+
+                <!-- <a href="#" class="buy-button" style="font-size : 30px;">BUY NOW</a> -->
+            </div>
+        </div>
+        <br>
+        <!--Final Verdict-->
+        <div class="article">
+            <h2 style="text-align: center;">Final Verdict</h2>
+            <p>Mitolyn is a powerful supplement designed for those looking to enhance their health naturally. While it has many benefits, it's essential to use it consistently and consult a healthcare professional if needed.</p>
+        </div>
+    <!-- </div> -->
+    
+    
+    <footer style="background-color: #222; color: #fff; text-align: center; padding: 20px;">
+        <p>&copy; 2025 Mitolyn Blog. All rights reserved.</p>
+        <p>
+            <a href="terms.html" style="color: #f8b400; text-decoration: none;">Terms & Conditions</a> | 
+            <a href="privacy.html" style="color: #f8b400; text-decoration: none;">Privacy Policy</a> | 
+            <a href="contact.html" style="color: #f8b400; text-decoration: none;">Contact Us</a>
+        </p>
+    </footer>
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>

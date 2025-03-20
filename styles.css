@@ -1,0 +1,80 @@
+#policy{
+    width: 100%;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+.order-btn {
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.order-btn:hover {
+    transform: scale(1.1);
+}
+
+.mitolyn {
+    height: 50px;
+    transition: transform 0.8s ease-in-out;
+}
+
+.mitolyn:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+/* body {
+    background: linear-gradient(to right, #44c6eb, #28a6db);
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: left;
+    padding: 50px;
+} */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-content {
+    width: 100%;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-left: -50px;
+}
+.text-content strong {
+    color: #003366;
+}
+.highlight {
+    color: #003366;
+    font-weight: bold;
+}
+.rating {
+    color: #FFD700;
+    font-weight: bold;
+}
+.buy-now {
+    color: #003366;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+}
+.buy-now:hover {
+    text-decoration: underline;
+}
+.product-image img {
+    max-width: 350px;
+    margin-right: -80px;
+    height: 350px;
+}
+
+/* .product-image :hover {
+    max-width: 390px;
+    margin-left: -10px;
+    height: 390px;
+}  */
+
+
+
+/* Lock the site so that user can't see html code using ctr+shift+i or f12 or shift+u */

@@ -1,2 +1,2 @@
-# MITOLYN-SALE
+# MITOLYN
 Faster Weght Loss Supplement

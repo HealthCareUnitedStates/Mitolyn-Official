@@ -78,6 +78,27 @@ body{
     transform: scale(1.1); /* Adjust the scale factor as needed */
 }
 
+ /* Keyframe animation for continuous movement */
+  @keyframes handMove {
+    0% { transform: translate(0px, 0px); } /* Start at top-left */
+    50% { transform: translate(15px, 15px); } /* Move diagonally */
+    100% { transform: translate(0px, 0px); } /* Return to start */
+
+    }
+
+.hand-indicator {
+    width: 50px; /* Adjust size */
+    position: absolute;
+    bottom: 10px; /* Adjust hand position below Buy button */
+    right: 20px;
+    animation: handMove 2s infinite ease-in-out;
+}
+
+.buy-container {
+    position: relative;
+    display: inline-block;
+}
+
 /* .product-image :hover {
     max-width: 390px;
     margin-left: -10px;

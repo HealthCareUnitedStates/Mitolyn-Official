@@ -18,3 +18,21 @@ document.addEventListener("keydown", function (e) {
         alert("Not again.....!😂");
     }
 });
+
+function toggleFAQ(button) {
+    let faqItem = button.parentElement;
+    let isActive = faqItem.classList.contains("active");
+
+    // Close all FAQ items
+    document.querySelectorAll(".faq-item").forEach(item => {
+        item.classList.remove("active");
+        item.querySelector(".faq-content").style.maxHeight = null;
+    });
+
+    // Open the clicked item if it was closed
+    if (!isActive) {
+        faqItem.classList.add("active");
+        let content = faqItem.querySelector(".faq-content");
+        content.style.maxHeight = content.scrollHeight + "px";
+    }
+}

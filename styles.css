@@ -69,6 +69,15 @@ body{
     height: 350px;
 }
 
+.pricing-box {
+    transition: transform 0.3s ease-in-out;
+    display: inline-block; /* Ensures smooth scaling */
+}
+
+.pricing-box:hover {
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+}
+
 /* .product-image :hover {
     max-width: 390px;
     margin-left: -10px;

@@ -105,6 +105,54 @@ body{
     height: 390px;
 }  */
 
+.faq {
+    max-width: 100%;
+    margin: auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    width: 50%; /* Adjust this percentage as needed */
+    margin: 0 auto;
+}
+
+.faq-button {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-weight: 800;
+}
+
+.faq-icon {
+    width: 26px;
+    height: 26px;
+    transition: transform 0.3s ease;
+}
+
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    font-size: 25px;
+    
+}
+
+.faq-item.active .faq-content {
+    max-height: 300px; /* Adjust as needed */
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(180deg);
+}
+
 
 
 /* Lock the site so that user can't see html code using ctr+shift+i or f12 or shift+u */

@@ -42,7 +42,7 @@ body{
     font-size: 18px;
     line-height: 1.6;
     margin-left: -180px;
-    color: white:
+    
 }
 .text-content strong {
     color: #003366;
@@ -116,6 +116,7 @@ body{
     padding: 10px 0;
     width: 50%; /* Adjust this percentage as needed */
     margin: 0 auto;
+    color: white;
 }
 
 .faq-button {

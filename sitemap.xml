@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://healthcareunitedstates.github.io/Mitolyn-Official/">
-  <url>
-    <loc>https://mitolyn-sales.github.io/Mitolyn-Official/</loc>
-    <lastmod>2025-03-26</lastmod>
-    <priority>1.0</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://healthcareunitedstates.github.io/Mitolyn-Official/</loc>
+        <lastmod>2025-04-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
 </urlset>
